@@ -554,3 +554,8 @@ p.sub {
 .b-1 a:hover {
     color: #01DF74 !important;
 }
+
+.team-img img {
+    width: 218px;
+    height: 218px;
+}

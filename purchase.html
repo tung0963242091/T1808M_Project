@@ -126,11 +126,11 @@
                 <div class="content-items-content-01">
                     <section class="slider-content-1"> <em class="bt-1"><b>&nbsp;</b></em>
                         <div class="anythingSlider-1">
-                            <h2 class="subtitle-1">Payment Orders</h2>
+                            <h2 class="subtitle-1 slider-2">Payment Orders</h2>
                             <link href="http://www.matkinhsaigon.com.vn/css/cart.css" rel="stylesheet" type="text/css">
                             <br>
                             <br>
-                            <form action="3.html" method="POST" name="frmCart">
+                            <form action="./confirmpurchase.html" method="POST" name="frmCart">
 
                                 <table cellpadding="0" cellspacing="0" id="yourcartdetails">
 
@@ -148,23 +148,22 @@
                                     <tbody class="yourcartdetails_all">
 
                                         <tr>
-                                            <td><a href="http://www.matkinhsaigon.com.vn/kinh-mat/kinh-mat-molsion-ms6063a10/">
-                                                    <img id="" src="http://www.matkinhsaigon.com.vn/library/module_new/kinh-mat-molsion-ms6063-a10_s2848.png"
+                                            <td><a href="#">
+                                                    <img id="" src="./images/glasses/NIKE-EV01138-001-1.jpg"
                                                         alt="Glasses Molsion MS6063-A10" class="h-100">
                                                 </a></td>
-                                            <td><a href="http://www.matkinhsaigon.com.vn/kinh-mat/kinh-mat-molsion-ms6063a10/">Kính
-                                                    Mát Molsion MS6063-A10</a>
+                                            <td><a href="#">Glasses Molsion MS6063-A10</a>
                                             </td>
                                             <td style="color:#3A9504;">200 <b> USD</b></td>
-                                            <td class="acenter" align="center">
+                                            <td class="acenter text-center">
                                                 1
                                             </td>
                                             <td>
                                                 <b><span id="pTotal_20631">200 <b> USD</b></span></b>
                                             </td>
-                                            <td align="center">
-                                                <img class="buttondete" onclick="window.location='http://www.matkinhsaigon.com.vn/gio-hang/?act=del&amp;pos=1';return false;"
-                                                    src="http://www.matkinhsaigon.com.vn/images/delete.png" alt="xóa sản phẩm"
+                                            <td class="text-center">
+                                                <img class="buttondete" onclick="window.location='#';return false;"
+                                                    src="./images/delete.png" alt="Delete"
                                                     width="16" height="16">
                                             </td>
                                         </tr>
@@ -189,13 +188,14 @@
                                                     cellpadding="0">
                                                     <tbody>
                                                         <tr>
-                                                            <td align="right" class="info_cart_title" valign="middle">NAME</td>
+                                                            <td align="right" class="info_cart_title" valign="middle">HỌ
+                                                                VÀ TÊN</td>
                                                             <td align="left" valign="top"><input class="textbox" name="txtName"
                                                                     type="text" value=""></td>
                                                         </tr>
                                                         <tr>
-                                                            <td align="right" class="info_cart_title" valign="middle">PROVINCE
-                                                                / CITY</td>
+                                                            <td align="right" class="info_cart_title" valign="middle">TỈNH/THÀNH
+                                                                PHỐ</td>
                                                             <td align="left" valign="top"> <select size="1" name="ddCity"
                                                                     id="city" onchange="showCity(this.value,'districtdiv','ddDistrict')"
                                                                     class="combo">
@@ -265,9 +265,9 @@
                                                                     <option value="can-tho">Cần Thơ</option>
                                                                 </select></td>
                                                         </tr>
+
                                                         <tr>
-                                                            <td align="right" class="info_cart_title" valign="middle">COUNTY
-                                                                / DISTRICT</td>
+                                                            <td align="right" class="info_cart_title" valign="middle">QUẬN/HUYỆN</td>
                                                             <td align="left" valign="top">
                                                                 <div id="districtdiv">
                                                                     <select size="1" name="ddDistrict" id="district"
@@ -301,14 +301,16 @@
                                                                 </div>
                                                             </td>
                                                         </tr>
+
                                                         <tr>
-                                                            <td align="right" class="info_cart_title" valign="middle">ADDRESS</td>
+                                                            <td align="right" class="info_cart_title" valign="middle">ĐỊA
+                                                                CHỈ</td>
                                                             <td align="left" valign="top"><input class="textbox" name="txtAddress"
                                                                     type="text" value=""></td>
                                                         </tr>
                                                         <tr>
-                                                            <td align="right" class="info_cart_title" valign="middle">CONTACT
-                                                                PHONE NUMBER</td>
+                                                            <td align="right" class="info_cart_title" valign="middle">SỐ
+                                                                ĐIỆN THOẠI LIÊN HỆ</td>
                                                             <td align="left" valign="top"><input class="textbox" name="txtMobile"
                                                                     type="text" value=""></td>
                                                         </tr>
@@ -318,14 +320,15 @@
                                                                     type="text" value=""></td>
                                                         </tr>
                                                         <tr>
-                                                            <td align="right" class="info_cart_title" valign="middle">PAYMENTS</td>
+                                                            <td align="right" class="info_cart_title" valign="middle">HÌNH
+                                                                THỨC THANH TOÁN</td>
                                                             <td align="left" valign="top">
-                                                                <input type="radio" name="hinhthuc" value="0" checked="">Payment
-                                                                on delivery (COD)
-                                                                <input type="radio" name="hinhthuc" value="1">Bank
-                                                                transfer
-                                                                <input type="radio" name="hinhthuc" value="2">Payment
-                                                                received at the store
+                                                                <input type="radio" name="hinhthuc" value="0" checked="">Thanh
+                                                                toán khi giao hàng (COD)
+                                                                <input type="radio" name="hinhthuc" value="1">Chuyển
+                                                                khoản qua ngân hàng
+                                                                <input type="radio" name="hinhthuc" value="2">Thanh
+                                                                toán nhận hàng tại cửa hàng
                                                             </td>
                                                         </tr>
                                                     </tbody>
