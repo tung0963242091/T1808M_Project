@@ -101,5 +101,9 @@ function showCity(idcity, idload, namess) {
 }
 
 function Confirm() {
-    alert("Thank you for your order. We will contact you soon");
+    alert(" Thank you for your order. We will contact you soon");
+}
+
+function Contact() {
+    alert(" Thank you for contacting us. We will contact you soon");
 }
